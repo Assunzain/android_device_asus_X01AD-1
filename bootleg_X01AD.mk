@@ -34,6 +34,11 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01AD
 
+BOOTLEGGERS_BUILD_TYPE := Shishufied
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bootleggers.maintainer=Assunzain
+
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
