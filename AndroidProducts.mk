@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X01AD.mk
+    $(LOCAL_DIR)/derp_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_X01AD-user \
-    lineage_X01AD-userdebug \
-    lineage_X01AD-eng
+    derp_X01AD-user \
+    derp_X01AD-userdebug \
+    derp_X01AD-eng
