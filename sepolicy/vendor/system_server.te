@@ -4,5 +4,4 @@ get_prop(system_server, userspace_reboot_config_prop)
 get_prop(system_server, userspace_reboot_exported_prop)
 
 # allow system_server to access vendor camera property.
-
 get_prop(system_server, vendor_camera_prop)
