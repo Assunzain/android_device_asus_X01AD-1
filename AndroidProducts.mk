@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/xtended_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtented_X01AD-user \
-    xtented_X01AD-userdebug \
-    xtented_X01AD-eng
+    xtended_X01AD-user \
+    xtended_X01AD-userdebug \
+    xtended_X01AD-eng
