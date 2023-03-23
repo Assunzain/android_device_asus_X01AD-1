@@ -21,29 +21,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common DerpFestOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common XtentedOS stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device identifiers.
-PRODUCT_NAME := derp_X01AD
+PRODUCT_NAME := xtended_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01AD
 
-# DerpFest-AOSP specific flags
-DERP_BUILD_TYPE := UNOFFICIAL
+# Xtended Stuffs
+XTENDED_BUILD_MAINTAINER := Assunzain
+XTENDED_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := false
-USE_LEGACY_BOOTANIMATION := true
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Assunzain"
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
