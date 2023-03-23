@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_X01AD.mk
+    $(LOCAL_DIR)/xtended_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_X01AD-user \
-    derp_X01AD-userdebug \
-    derp_X01AD-eng
+    xtented_X01AD-user \
+    xtented_X01AD-userdebug \
+    xtented_X01AD-eng
