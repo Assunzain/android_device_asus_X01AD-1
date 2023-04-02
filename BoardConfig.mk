@@ -104,8 +104,14 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+# Build
+KBUILD_BUILD_USER := AssunZain
+KBUILD_BUILD_HOST := My Project
+BUILD_USERNAME := AssunZain
+BUILD_HOSTNAME := My Project
+
 # Display
-TARGET_SCREEN_DENSITY := 280
+TARGET_SCREEN_DENSITY := 300
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
@@ -168,7 +174,6 @@ TARGET_BOARD_PLATFORM := msm8953
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
-TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
@@ -218,8 +223,8 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-# Inherit from the proprietary version
-include vendor/asus/X01AD/BoardConfigVendor.mk
-
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
+
+# Inherit from the proprietary version
+include vendor/asus/X01AD/BoardConfigVendor.mk
