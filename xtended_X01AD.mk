@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common XtentedOS stuff.
+# Inherit some common XtendedOS stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Set shipping API level
@@ -35,11 +35,14 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01AD
 
 # Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := Assunzain
-XTENDED_BUILD_TYPE := Unofficial
+XTENDED_BUILD_MAINTAINER := AssunZain
+XTENDED_BUILD_TYPE := UNNOFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+XTENDED_BUILD_DONATE_URL := http://teer.id/hzproject
+
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
