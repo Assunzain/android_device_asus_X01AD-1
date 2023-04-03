@@ -21,18 +21,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common EvolutionOS stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common AospOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device identifiers.
-PRODUCT_NAME := evolution_X01AD
+PRODUCT_NAME := aosp_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01AD
+
+# Project-Elixir Official Stuff
+ELIXIR_MAINTAINER := AssunZain
+ELIXIR_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
