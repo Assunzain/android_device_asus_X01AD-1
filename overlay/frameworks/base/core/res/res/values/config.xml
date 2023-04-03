@@ -226,6 +226,9 @@
     <!-- The restoring is handled by modem if it is true-->
      <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Face unlock -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
+
     <!-- Height of the status bar -->
      <dimen name="status_bar_height_portrait">57.0px</dimen>
 
@@ -568,5 +571,5 @@
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
-
+    
 </resources>
